@@ -51,8 +51,8 @@ class App extends Component {
     };
   }
 
-  handleChange(notFilter) {
-    this.setState({ filterString: notFilter });
+  handleChange(bananas) {
+    this.setState({ filterString: bananas});
   }
 
   render() {
@@ -65,7 +65,8 @@ class App extends Component {
       });
 
     return (
-      <div className="App">
+      //Refers to CSS
+      <div className="App"> 
         <input onChange={e => this.handleChange(e.target.value)} type="text" />
         {myListdisplay}
       </div>
