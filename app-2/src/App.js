@@ -13,7 +13,7 @@ class App extends Component {
 
   render() {
     let things = this.state.myArr.map((element, index) => {
-      return <h2 key={index}>{element}</h2>;
+      return <h2 mykey={index}>{element}</h2>;
     });
 
     return <div className="App">{things}</div>;
